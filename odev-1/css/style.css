@@ -1,0 +1,136 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--non-selected);
+  font-family: "Merriweather", serif;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 60.938rem;
+  height: 41.375rem;
+  background-color: var(--main);
+  padding-left: 35px;
+  gap: 40px;
+  align-items: center;
+  border-radius: 25px;
+}
+.main-content__title {
+  color: var(--title);
+}
+.main-side {
+  width: 88px;
+  height: 37rem;
+  padding: 158px 15px 158px 15px;
+  background-color: var(--non-selected);
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 20px;
+}
+.side__item {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 15px;
+}
+.side__item__selected {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: auto;
+  background-color: var(--main);
+  border-radius: 10px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 44px;
+}
+.main-content-top-left {
+  display: flex;
+  align-items: center;
+  row-gap: 5px;
+}
+.main-content-top-right {
+  display: flex;
+  background-color: var(--non-selected);
+  border: solid 1px #1a2036;
+  border-radius: 10px;
+  padding: 3px;
+}
+.main-content-top-right__icon {
+  background-color: var(--non-selected);
+}
+.main-content-top-right__icon__selected {
+  background-color: var(--main);
+  border-radius: 2px;
+}
+
+.main-content-top {
+  display: flex;
+  gap: 35rem;
+}
+.main-content-bottom {
+  display: flex;
+  row-gap: 20px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+.main-content-card {
+  width: 173px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--non-selected);
+  border-radius: 10px;
+  position: relative;
+}
+.main-content-card__title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--title);
+}
+.main-content-card__text {
+  color: var(--title);
+}
+
+.main-content-card-Add {
+  width: 173px;
+  height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--addCard);
+  border-radius: 10px;
+}
+.main-content-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: var(--main);
+  margin-bottom: 14px;
+}
+
+.main-content-card__dot {
+  width: 11px;
+  height: 11px;
+  background-color: var(--dot);
+  border-radius: 100%;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}

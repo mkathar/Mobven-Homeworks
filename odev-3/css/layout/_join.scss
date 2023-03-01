@@ -1,0 +1,110 @@
+.area {
+  width: 1600px;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(248, 244, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 244, 250, 0.3) 0%,
+    rgba(152, 44, 50, 0.3) 82%
+  );
+  font-family: $Mulish;
+  color: $blue;
+  position: relative;
+  &__shadow {
+    width: 950px;
+    height: 611px;
+    border-radius: 50px;
+    background-color: rgba(255, 99, 71, 0.1);
+    position: absolute;
+    bottom: 50px;
+    @include z-index("basement");
+  }
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 606px;
+  height: 851px;
+  background-color: $white;
+  padding: 64px 104px 64px 104px;
+  border-radius: 24px;
+  &__top {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+    &__img {
+      border-radius: 100%;
+      margin-bottom: 36.69;
+    }
+    &__invited {
+      margin-bottom: 19px;
+    }
+    &__channelName {
+      margin-bottom: 19px;
+    }
+  }
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    &__inputLabel {
+      font-weight: $normal-weight;
+      line-height: 20.08px;
+    }
+    &__input {
+      width: 398px;
+      height: 71px;
+      border: 1px $pastelPink solid;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    margin-bottom: 41px;
+    &__radio {
+      padding: 0.5em;
+      appearance: none;
+      outline: 0.1em solid $pastelPink;
+      outline-offset: 0.1em;
+      border-radius: 20%;
+      width: 33px;
+      height: 33px;
+    }
+    &__agreement {
+      width: 349px;
+      padding-right: 13px;
+      font-size: 18px;
+      &__link {
+        color: $pink;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__continueButton {
+      width: 398px;
+      height: 71px;
+      background-color: $pink;
+      color: $white;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 56px;
+    }
+    &__link {
+      color: $pink;
+    }
+  }
+}

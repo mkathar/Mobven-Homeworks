@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <section class="form">
+      <h1 class="form__title">Sign In</h1>
+      <div class="form-group">
+        <span class="form-group__label">Name</span>
+        <input
+          id="name"
+          class="form-group__input"
+          type="text"
+          placeholder="Enter your name"
+          maxlength="20"
+        />
+      </div>
+      <div class="form-group">
+        <span class="form-group__label">Surname</span>
+        <input
+          id="surname"
+          class="form-group__input"
+          type="text"
+          placeholder="Enter your surname"
+          maxlength="20"
+        />
+      </div>
+      <div class="form-group">
+        <span class="form-group__label">Phone</span>
+        <input
+          id="phone"
+          class="form-group__input"
+          type="text"
+          placeholder="Enter your phone"
+          maxlength="16"
+        />
+      </div>
+      <div class="form-group">
+        <span class="form-group__label">Email Address</span>
+        <input
+          id="email"
+          class="form-group__input"
+          type="email"
+          placeholder="Enter your address"
+          maxlength="50"
+        />
+      </div>
+      <div class="form-group">
+        <span class="form-group__label">City</span>
+        <select id="Iller" class="form-group__input">
+          <option value="0">Lütfen Bir İl Seçiniz</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <span class="form-group__label">District</span>
+        <select id="Ilceler" disabled="disabled" class="form-group__input">
+          <option value="0">Lütfen Önce bir İl seçiniz</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <div class="form-group__label">
+          <span class="form-group__label__title">Password</span>
+          <a class="form-group__label__link" href="">Forgot password</a>
+        </div>
+        <input
+          id="password"
+          class="form-group__input"
+          type="password"
+          placeholder="Enter your password"
+          maxlength="20"
+        />
+      </div>
+
+      <button id="signIn" class="form__signIn">Sign In</button>
+    </section>
+    <script type="module" src="./Custom.js"></script>
+    <script type="module" src="users.js"></script>
+    <script type="module" src="data.js"></script>
+  </body>
+</html>
