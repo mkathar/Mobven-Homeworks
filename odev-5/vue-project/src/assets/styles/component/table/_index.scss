@@ -1,0 +1,28 @@
+.table {
+  margin-top: 20px;
+  font-family: $heebo;
+  @include area(730px, fit-content);
+  background-color: $gray-50;
+  border-radius: 20px;
+
+  &__group {
+    text-align: center;
+    height: 40px;
+    &--title {
+      max-width: 100px;
+
+      color: $white;
+    }
+    &--text {
+      max-width: 100px;
+      color: $white;
+    }
+    &--btn {
+      width: 30px;
+      height: 30px;
+      background-color: $pink;
+      border: none;
+      color: $white;
+    }
+  }
+}
