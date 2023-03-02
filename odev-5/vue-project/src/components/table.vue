@@ -19,7 +19,7 @@
       </td>
       <td class="table__group--text">{{ item.password }}</td>
       <td class="table__group--text">
-        <button class="table__group--btn" :value="item.id" @click="selam">
+        <button class="table__group--btn" :value="item.id" @click="delete">
           x
         </button>
       </td>
@@ -39,7 +39,7 @@ export default {
     Users: Object,
   },
   methods: {
-    selam(e) {
+    delete(e) {
       this.Users.forEach((element, index) => {
         element.id = index;
         if (e.target.value == element.id) {
