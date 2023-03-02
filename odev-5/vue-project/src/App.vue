@@ -60,6 +60,6 @@ export default {
 </script>
 
 <template>
-  <registerForm :form="this.form" :Users="this.Users" />
-  <formTable :form="this.form" :Users="this.Users" />
+  <registerForm :form="form" :Users="Users" />
+  <formTable :form="form" :Users="Users" />
 </template>
