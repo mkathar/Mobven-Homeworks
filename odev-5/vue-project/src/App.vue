@@ -6,15 +6,6 @@ import registerForm from "./components/registerForm.vue";
 export default {
   data() {
     return {
-      form: {
-        name: null,
-        surname: null,
-        phone: null,
-        email: null,
-        city: null,
-        district: null,
-        password: null,
-      },
       Users: [
         {
           id: 0,
@@ -60,6 +51,6 @@ export default {
 </script>
 
 <template>
-  <registerForm :form="form" :Users="Users" />
-  <formTable :form="form" :Users="Users" />
+  <registerForm :Users="Users" />
+  <formTable :Users="Users" />
 </template>
