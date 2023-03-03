@@ -25,12 +25,15 @@
       </td>
     </tr>
   </table>
+  <h1 class="noUser" v-if="condition">registered user not found</h1>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      condition: null,
+    };
   },
   props: {
     form: Object,
@@ -44,9 +47,17 @@ export default {
         if (e.target.value == element.id) {
           console.log(e.target.value, element.id);
           this.Users.splice(element.id, 1);
-          console.log("selam");
+          this.getCondition();
+          console.log(this.condition, this.Users.length);
         }
       });
+    },
+    getCondition() {
+      if (this.Users.length == 0) {
+        this.condition = true;
+      } else {
+        this.condition = false;
+      }
     },
   },
 };

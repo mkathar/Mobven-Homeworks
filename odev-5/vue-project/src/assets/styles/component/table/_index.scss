@@ -26,3 +26,16 @@
     }
   }
 }
+.noUser {
+  margin-top: 3rem;
+  animation: blinker 2s linear infinite;
+  color: $red;
+  font-weight: bold;
+  font-family: $heebo;
+  text-align: center;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

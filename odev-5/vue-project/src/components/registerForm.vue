@@ -69,7 +69,7 @@
       <input
         id="password"
         class="form-group__input"
-        type="text"
+        type="password"
         placeholder="Enter your password"
         maxlength="20"
         v-model="userPassword"
@@ -117,14 +117,6 @@ export default {
       this.Users.push(newUser);
       console.log(this.Users);
       this.degisken = this.degisken + 1;
-      console.log("name", userName);
-      console.log("surname", userSurname);
-      console.log("phone", userPhone);
-      console.log("email", userEmail);
-      console.log("city", userCity);
-      console.log("district", userDistrict);
-      console.log("password", userPassword);
-      console.log(this.errors);
       e.preventDefault();
     },
   },
