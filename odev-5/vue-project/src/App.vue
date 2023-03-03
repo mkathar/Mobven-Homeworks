@@ -1,4 +1,5 @@
 <script setup>
+import { watch } from "vue";
 import formTable from "./components/formTable.vue";
 import registerForm from "./components/registerForm.vue";
 </script>
@@ -46,6 +47,7 @@ export default {
       ],
     };
   },
+
   props: {},
 };
 </script>

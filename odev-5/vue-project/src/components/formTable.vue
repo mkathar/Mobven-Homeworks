@@ -25,18 +25,15 @@
       </td>
     </tr>
   </table>
-  <h1 class="noUser" v-if="condition">registered user not found</h1>
+  <h1 class="noUser" v-if="Users.length == 0">registered user not found</h1>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      condition: null,
-    };
+    return {};
   },
   props: {
-    form: Object,
     Users: Object,
   },
 
@@ -51,13 +48,6 @@ export default {
           console.log(this.condition, this.Users.length);
         }
       });
-    },
-    getCondition() {
-      if (this.Users.length == 0) {
-        this.condition = true;
-      } else {
-        this.condition = false;
-      }
     },
   },
 };

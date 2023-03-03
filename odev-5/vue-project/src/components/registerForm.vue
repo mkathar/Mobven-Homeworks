@@ -82,7 +82,9 @@
 <script>
 export default {
   data() {
-    return { degisken: 3 };
+    return {
+      degisken: 3,
+    };
   },
 
   props: {
@@ -115,8 +117,9 @@ export default {
         password: this.userPassword,
       };
       this.Users.push(newUser);
-      console.log(this.Users);
+      console.log(this.condition);
       this.degisken = this.degisken + 1;
+      this.getCondition();
       e.preventDefault();
     },
   },
