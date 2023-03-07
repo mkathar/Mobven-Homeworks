@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+$heebo: "Heebo", sans-serif;
+@font-face {
+  font-family: "Netflix", sans-serif;
+  font-weight: bold;
+  src: local("Netflix"),
+    url("src\assets\fonts\Netflix Sans Bold.otf") format("truetype");
+}

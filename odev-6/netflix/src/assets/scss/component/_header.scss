@@ -1,0 +1,27 @@
+.header {
+  background-image: url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdLlAJByZl-L8panmbOLgiAEqmifo9j9KWWjCAC-eyNsGWaO5B-z8kICX_pGdxCVUJWSDBPZa18uDe5cKuSVwio4x-z_aaVDUJsW.webp?r=009");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+
+  width: 100%;
+
+  &__group {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &__links {
+      list-style-type: none;
+      display: flex;
+      margin-left: 3rem;
+      align-items: center;
+    }
+    &__link {
+      margin: 1rem;
+      color: $white;
+    }
+  }
+}

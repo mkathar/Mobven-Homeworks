@@ -1,0 +1,76 @@
+.body {
+  background-color: $welcome-bg;
+  @include display;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.welcome {
+  @include display;
+  @include area(750px, 750px);
+  @include direction(column);
+  &__list {
+    @include display;
+    column-gap: 40px;
+  }
+  &__title {
+    color: white;
+    text-align: center;
+    font-family: Netflix;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+  }
+  &__group {
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list__text:hover {
+    color: $white;
+
+    &__list__image {
+      border: 1px solid white;
+    }
+  }
+  &__list__image {
+    @include area(12.5rem, 12.5rem);
+    @include rounded(10px);
+  }
+
+  &__list__icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: $gray;
+    @include rounded(100px);
+    margin: 35px 35px;
+  }
+  &__list__text {
+    color: $gray;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    width: 100px;
+    text-decoration: none;
+  }
+  &--button {
+    margin: 3.125rem auto;
+    background-color: $welcome-bg;
+    border: 1px solid $gray;
+    @include area(15.5rem, 3.125rem);
+    color: $gray;
+    font-size: 1.3rem;
+  }
+  &--button:hover {
+    margin: 3.125rem auto;
+    background-color: $welcome-bg;
+    border: 1px solid $white;
+    @include area(15.5rem, 3.125rem);
+    color: $white;
+    font-size: 1.3rem;
+  }
+}

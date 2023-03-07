@@ -1,0 +1,15 @@
+@mixin area($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin display($display: flex, $justify: center, $align: center) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin direction($direction: row) {
+  flex-direction: $direction;
+}
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
