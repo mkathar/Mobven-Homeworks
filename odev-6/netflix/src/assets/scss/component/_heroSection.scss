@@ -1,2 +1,26 @@
 .heroSection {
+  width: 90%;
+  padding-top: 14rem;
+  padding-bottom: 20rem;
+  margin: 0 auto;
+  &__image {
+    margin: 1rem 0;
+  }
+  &__text {
+    margin: 1rem 0;
+    color: $white;
+    width: 35%;
+  }
+  &--playButton {
+    padding: 0.5rem 1rem;
+    @include rounded(5px);
+    margin-right: 0.5rem;
+  }
+  &--attentionButton {
+    padding: 0.5rem 1rem;
+    @include rounded(5px);
+    background: $gray-50;
+    border-style: none;
+    color: $white;
+  }
 }

@@ -1,34 +1,39 @@
-<script setup></script>
+<script setup>
+import { Icon } from "../icons";
+</script>
 
 <template>
   <section class="heroSection">
     <img
-      src="https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABe6r6HheAcWQnFyAucENp3UMBCqlEkD1-bktHfaZ4lsXVoayjV9rOB-i7_Ltd3-DFn5R8yM6Hp2nkAU1ilqRLI4G9OCqhuD-ESYP995J-hoRFqgKL8OZSDn85sVjeaxo3RBXuVGQigucTITaQaildwgQOOyDYJHIqt3-y-ARk2kVGXhvxyvW_Q.webp?r=574"
+      class="heroSection__image"
+      src="https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABb65X1TnPi-UFZNMZhm2OgmBAobm1kFUMpkCGOfv0P0K7GkGXxKVw5f3pnJ87HGAiwITukjFlL8BhQn_DYWxbpe9hXZ1iuDk-c9f9e4TQFd2.webp?r=943"
       alt=""
     />
-    <h1>5. Sezonu Şimdi izleyin</h1>
-    <p>
-      Formula 1'in kıyasıya rekabetle dolu her sezonunda pilotlar,yöneticiler ve
-      takım sahipleri,hayatı hem pistte hem de pist dışında hızlı yaşıyor.
+
+    <p class="heroSection__text">
+      Viking kahramanı Ragnar Lothbrok’un, ileriyi göremeyen, yetersiz bir
+      lidere meydan okuyarak Norse sınırlarını nasıl genişlettiğini
+      seyrettiğimiz gerçekçi bir dram.
     </p>
-    <button></button>
+    <button class="heroSection--playButton"><Icon name="play" /> Oynat</button>
+    <button class="heroSection--attentionButton">
+      <Icon name="attention" /> Dada Fazla Bilgi
+    </button>
   </section>
 </template>
-
 
 <script>
 export default {
   data() {
     return {
-      hero: [{
-        img: "link",
-        title: "5."
-        paragraf:""
-      }]
-    }
-  }
-
-}
-
-
+      hero: [
+        {
+          img: "link",
+          title: "5.",
+          paragraf: "",
+        },
+      ],
+    };
+  },
+};
 </script>

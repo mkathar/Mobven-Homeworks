@@ -1,13 +1,21 @@
-.header {
-  background-image: url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABdLlAJByZl-L8panmbOLgiAEqmifo9j9KWWjCAC-eyNsGWaO5B-z8kICX_pGdxCVUJWSDBPZa18uDe5cKuSVwio4x-z_aaVDUJsW.webp?r=009");
+.area {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(77, 63, 63, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWUo8-WMRML4DtAoby0LFm3QiL6TCH9Vs52tECyxtw5L7VTmzaGF8M7qJxwknZ29ZR13O4Yzefgmj7GjU9TU8LEZz41O1SZqDxbI.webp?r=cca");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
-
-  width: 100%;
+  margin-bottom: 200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
 
   &__group {
     height: 50px;
