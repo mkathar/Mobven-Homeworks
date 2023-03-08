@@ -31,7 +31,9 @@ import { RouterLink } from "vue-router";
             <RouterLink class="header__group__link" to="/Child"
               >Çocuk</RouterLink
             >
+            <router-view />
           </li>
+
           <li class="header__group__link"><Icon name="bell" /></li>
           <li class="header__group__link">
             <img

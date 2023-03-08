@@ -3,7 +3,7 @@
     <section class="welcome">
       <h1 class="welcome__title">Kim İzliyor ?</h1>
       <div class="welcome__list">
-        <RouterLink class="welcome__group" to="/Main "
+        <RouterLink class="welcome__group" to="/Home"
           ><img
             class="welcome__group__image--user"
             src="http://occ-0-778-2774.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY5cwIbM7shRfcXmfQg98cqMqiZZ8sReZnj4y_keCAHeXmG_SoqLD8SXYistPtesdqIjcsGE-tHO8RR92n7NyxZpqcFS80YfbRFz.png?r=229"

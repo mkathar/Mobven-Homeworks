@@ -2,7 +2,7 @@
   <div class="carouselArea">
     <article class="carousel">
       <h1 class="carousel__title">Amerikan Dizisi</h1>
-      <CCarousel controls pause="true">
+      <CCarousel controls>
         <CCarouselItem>
           <div class="carousel__item" v-for="(item, index) in American">
             <div class="popover__content">
