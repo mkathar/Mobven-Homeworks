@@ -38,28 +38,106 @@
           </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV2"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV2">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV4"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV3">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV3"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV4">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
       </CCarousel>
     </article>
@@ -67,36 +145,140 @@
       <h1 class="carousel__title">Gündemdekiler</h1>
       <CCarousel controls>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV4"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV4">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV2"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV3">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in American"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in AmericanV2">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
         <CCarouselItem>
-          <img
-            class="carousel__images"
-            v-for="(item, index) in AmericanV3"
-            :src="baseURL + item.link"
-            alt=""
-          />
+          <div class="carousel__item" v-for="(item, index) in American">
+            <div class="popover__content">
+              <img
+                class="popover__content__image"
+                alt="Film"
+                :src="baseURL + item.link"
+              />
+              <div class="popover__message">
+                <div class="popover__ıcons">
+                  <div>
+                    <Icon name="play" fill="white" />
+                    <Icon name="add" fill="white" />
+                    <Icon name="like" fill="white" />
+                  </div>
+                  <Icon name="cardDown" fill="white" />
+                </div>
+                <p class="popover__text">
+                  <span class="popover__text--match">%98 Eşleşme</span>
+                  <span class="popover__text--age">+18</span>
+                  <span class="popover__text--season">5 Sezon</span>
+                  <span class="popover__text--quality">HD</span>
+                </p>
+                <p class="popover__type">
+                  Şiddet içerikli - Sert Gerçekçi - Gerilim
+                </p>
+                <h6 class="popover__like">
+                  <Icon name="like" /> Çok Beğenildi
+                </h6>
+              </div>
+            </div>
+            <img class="carousel__images" :src="baseURL + item.link" alt="" />
+          </div>
         </CCarouselItem>
       </CCarousel>
     </article>
@@ -156,18 +338,14 @@ export default {
           id: 9,
           link: "/AAAABYwuBV3NACTOtIgFJIbRXF0wZFMQldfUCB9obzWA5mhL0NlcPRX063F-gxwqyL_SdbZSmi6URSkPUpN7CL1Br_eeCnlvb823MR4.webp?r=2ac",
         },
-        {
-          id: 10,
-          link: "https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVbJ62bvzcv456jSCykgqx4mgfosMZ7UsXwXMRN-Fz_2L4ysGmosix1PpCiBf-xUWOfAa2VO1GUuG-XennklIpr72wlZB0QwwXQpSDiaPZN6jTT4ZenvRvnU911cxi87Vooh.jpg?r=cf2",
-        },
       ],
       AmericanV3: [
         {
-          id: 11,
+          id: 10,
           link: "/AAAABVbJ62bvzcv456jSCykgqx4mgfosMZ7UsXwXMRN-Fz_2L4ysGmosix1PpCiBf-xUWOfAa2VO1GUuG-XennklIpr72wlZB0QwwXQpSDiaPZN6jTT4ZenvRvnU911cxi87Vooh.jpg?r=cf2",
         },
         {
-          id: 12,
+          id: 11,
           link: "/AAAABT_lEnatzXKsxSEf2s-75ETOuxUQ-nB21Yf1Vgj57kXmzGmYboiWLnn82WgbO6o6jYb9My4Ym8e_t_NXg6EtJ7sdzpwNaAF5h7koj8EW2Xy3R0WEd3SmvUXq8rKoimAuqLrR.jpg?r=e30",
         },
         {

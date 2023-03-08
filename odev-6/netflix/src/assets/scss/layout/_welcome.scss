@@ -24,39 +24,51 @@
   &__group {
     align-items: center;
     justify-content: center;
-
+    text-align: center;
     display: flex;
     flex-direction: column;
-  }
+    text-decoration: none;
 
-  &__list__text:hover {
-    color: $white;
-
-    &__list__image {
-      border: 1px solid white;
+    &__image {
+      &--child {
+        @include area(12.5rem, 12.5rem);
+        @include rounded(10px);
+      }
+      &--user {
+        @include area(12.5rem, 12.5rem);
+        @include rounded(10px);
+      }
+    }
+    &__icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-color: $gray;
+      @include rounded(100px);
+      margin: 35px 35px;
+    }
+    &__text {
+      &--user {
+        color: $gray;
+        font-size: 1.3rem;
+        margin-top: 10px;
+        width: 100px;
+      }
+      &--child {
+        color: $gray;
+        font-size: 1.3rem;
+        margin-top: 38px;
+        width: 100px;
+      }
+      &--add {
+        color: $gray;
+        font-size: 1.3rem;
+        margin-top: 38px;
+        width: 100px;
+      }
     }
   }
-  &__list__image {
-    @include area(12.5rem, 12.5rem);
-    @include rounded(10px);
-  }
 
-  &__list__icon {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background-color: $gray;
-    @include rounded(100px);
-    margin: 35px 35px;
-  }
-  &__list__text {
-    color: $gray;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-top: 10px;
-    width: 100px;
-    text-decoration: none;
-  }
   &--button {
     margin: 3.125rem auto;
     background-color: $welcome-bg;
@@ -73,4 +85,18 @@
     color: $white;
     font-size: 1.3rem;
   }
+}
+
+//hover
+
+.welcome__group__image--child:hover + .welcome__group__text--child {
+  color: white;
+}
+//       !!grup hover sormam gerek!!
+.welcome__group__text--child:hover + .welcome__group__image--child {
+  border: 5px solid white;
+}
+
+.welcome__group__image--user:hover + .welcome__group__text--user {
+  color: white;
 }

@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Welcome from "../components/welcome.vue";
 import Main from "../pages/Main.vue";
-
+import Child from "../pages/Child.vue";
 const routes = [
   {
     path: "/",
@@ -12,6 +12,11 @@ const routes = [
     path: "/Main",
     name: "Main",
     component: Main,
+  },
+  {
+    path: "/Child",
+    name: "Child",
+    component: Child,
   },
 ];
 

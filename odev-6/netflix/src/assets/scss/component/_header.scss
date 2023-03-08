@@ -1,14 +1,3 @@
-.area {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(77, 63, 63, 0),
-      rgba(0, 0, 0, 1)
-    ),
-    url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWUo8-WMRML4DtAoby0LFm3QiL6TCH9Vs52tECyxtw5L7VTmzaGF8M7qJxwknZ29ZR13O4Yzefgmj7GjU9TU8LEZz41O1SZqDxbI.webp?r=cca");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -30,6 +19,16 @@
     &__link {
       margin: 1rem;
       color: $white;
+      text-decoration: none;
+    }
+    &--button {
+      width: 150px;
+      background-color: $netflix-red;
+      color: $white;
+      padding: 5px 3px;
+      border-style: none;
+      @include rounded(3px);
+      font-weight: bold;
     }
   }
 }

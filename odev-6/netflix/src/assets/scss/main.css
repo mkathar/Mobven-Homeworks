@@ -48,21 +48,22 @@
 .welcome__group {
   align-items: center;
   justify-content: center;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
-.welcome__list__text:hover {
-  color: #ffffff;
-}
-.welcome__list__text:hover__list__image {
-  border: 1px solid white;
-}
-.welcome__list__image {
+.welcome__group__image--child {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 10px;
 }
-.welcome__list__icon {
+.welcome__group__image--user {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 10px;
+}
+.welcome__group__icon {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -70,13 +71,23 @@
   border-radius: 100px;
   margin: 35px 35px;
 }
-.welcome__list__text {
+.welcome__group__text--user {
   color: #808080;
-  text-align: center;
   font-size: 1.3rem;
   margin-top: 10px;
   width: 100px;
-  text-decoration: none;
+}
+.welcome__group__text--child {
+  color: #808080;
+  font-size: 1.3rem;
+  margin-top: 38px;
+  width: 100px;
+}
+.welcome__group__text--add {
+  color: #808080;
+  font-size: 1.3rem;
+  margin-top: 38px;
+  width: 100px;
 }
 .welcome--button {
   margin: 3.125rem auto;
@@ -97,10 +108,16 @@
   font-size: 1.3rem;
 }
 
-.area {
-  background-image: linear-gradient(to bottom, rgba(77, 63, 63, 0), rgb(0, 0, 0)), url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWUo8-WMRML4DtAoby0LFm3QiL6TCH9Vs52tECyxtw5L7VTmzaGF8M7qJxwknZ29ZR13O4Yzefgmj7GjU9TU8LEZz41O1SZqDxbI.webp?r=cca");
-  background-repeat: no-repeat;
-  background-size: cover;
+.welcome__group__image--child:hover + .welcome__group__text--child {
+  color: white;
+}
+
+.welcome__group__text--child:hover + .welcome__group__image--child {
+  border: 5px solid white;
+}
+
+.welcome__group__image--user:hover + .welcome__group__text--user {
+  color: white;
 }
 
 .header {
@@ -125,6 +142,16 @@
 .header__group__link {
   margin: 1rem;
   color: #ffffff;
+  text-decoration: none;
+}
+.header__group--button {
+  width: 150px;
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 5px 3px;
+  border-style: none;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .heroSection {
@@ -160,6 +187,7 @@
 
 .carousel {
   width: 100%;
+  height: 500px;
   padding: 2rem 0;
   text-align: center;
 }

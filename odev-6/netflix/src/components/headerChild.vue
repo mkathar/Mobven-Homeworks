@@ -6,8 +6,9 @@ import {
   CDropdownMenu,
   CDropdownToggle,
 } from "@coreui/vue";
-import HeroSection from "./heroSection.vue";
+
 import { RouterLink } from "vue-router";
+import heroSectionChild from "./heroSectionChild.vue";
 </script>
 
 <template>
@@ -27,17 +28,18 @@ import { RouterLink } from "vue-router";
       <div class="header__group">
         <ul class="header__group__links">
           <li class="header__group__link"><Icon name="search" /></li>
-          <li>
-            <RouterLink class="header__group__link" to="/Child"
-              >Çocuk</RouterLink
-            >
-          </li>
-          <li class="header__group__link"><Icon name="bell" /></li>
           <li class="header__group__link">
             <img
-              src="https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229"
+              src="https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABWN3pnfMxat1OaEXWifPzfq8j993hhJk4khXEp3XI1qtauznj66Qc-frQs8lkfFM1Pym-fu1HFqhZAXTBgbq9IpjMMD_9CU.png?r=8f0"
               alt=""
             />
+          </li>
+
+          <li class="header__group__link">
+            <RouterLink to="/">
+              <button class="header__group--button">Çocuktan Çık</button>
+            </RouterLink>
+            <router-view />
           </li>
           <li>
             <CDropdown>
@@ -51,9 +53,7 @@ import { RouterLink } from "vue-router";
                   Çocuk</CDropdownItem
                 >
                 <CDropdownItem href="#"
-                  ><RouterLink to="/"
-                    ><Icon name="pen" /> Profil Yönetimi</RouterLink
-                  >
+                  ><Icon name="pen" /> Profil Yönetimi
                 </CDropdownItem>
                 <CDropdownItem href="#"
                   ><Icon name="transfer" /> Profili Aktar</CDropdownItem
@@ -70,7 +70,7 @@ import { RouterLink } from "vue-router";
         </ul>
       </div>
     </header>
-    <HeroSection />
+    <heroSectionChild />
   </div>
 </template>
 
@@ -81,7 +81,7 @@ import { RouterLink } from "vue-router";
       rgba(77, 63, 63, 0),
       rgba(0, 0, 0, 1)
     ),
-    url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWUo8-WMRML4DtAoby0LFm3QiL6TCH9Vs52tECyxtw5L7VTmzaGF8M7qJxwknZ29ZR13O4Yzefgmj7GjU9TU8LEZz41O1SZqDxbI.webp?r=cca");
+    url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTeIrPsa5CdL36ehhrIxSaBjkaKPTPTcPtHl0eMg1GD2WWSWKNNdZPOmon34gPpsblNBTQ9t6vNDxlwi_xfSi6IFa-9IMNgimaQJ.webp?r=647");
   background-repeat: no-repeat;
   background-size: cover;
 }
