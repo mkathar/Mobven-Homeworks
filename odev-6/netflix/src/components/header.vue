@@ -9,14 +9,40 @@ import {
 import HeroSection from "./heroSection.vue";
 import { RouterLink } from "vue-router";
 </script>
+<script>
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    bgImage() {
+      return `linear-gradient( to bottom, rgba(77, 63, 63, 0), rgba(0, 0, 0, 1) ), ${this.hero.pageBackground}`;
+    },
+  },
+  props: ["hero"],
+  components: {
+    heroSection: HeroSection,
+  },
+  mounted() {
+    console.log(this.hero);
+  },
+  beforeUpdate() {
+    console.log(this.hero);
+  },
+};
+</script>
 
 <template>
-  <div class="area">
+  <div class="area" :style="{ backgroundImage: bgImage }">
     <header class="header">
       <div class="header__group">
         <Icon class="header--icon" name="netflix" :size="100" />
         <ul class="header__group__links">
-          <li class="header__group__link">Ana Sayfa</li>
+          <li class="header__group__link">
+            <RouterLink class="header__group__link" to="/home"
+              >Anasayfa</RouterLink
+            >
+          </li>
           <li class="header__group__link">Diziler</li>
           <li class="header__group__link">Filmler</li>
           <li class="header__group__link">Yeni ve Popüler</li>
@@ -27,10 +53,16 @@ import { RouterLink } from "vue-router";
       <div class="header__group">
         <ul class="header__group__links">
           <li class="header__group__link"><Icon name="search" /></li>
-          <li>
+          <li v-if="$route.name == 'Home'">
             <RouterLink class="header__group__link" to="/Child"
               >Çocuk</RouterLink
             >
+            <router-view />
+          </li>
+          <li v-if="$route.name == 'Child'" class="header__group__link">
+            <RouterLink to="/welcome">
+              <button class="header__group--button">Çocuktan Çık</button>
+            </RouterLink>
             <router-view />
           </li>
 
@@ -53,7 +85,7 @@ import { RouterLink } from "vue-router";
                   Çocuk</CDropdownItem
                 >
                 <CDropdownItem href="#"
-                  ><RouterLink to="/"
+                  ><RouterLink to="/welcome"
                     ><Icon name="pen" /> Profil Yönetimi</RouterLink
                   >
                 </CDropdownItem>
@@ -72,18 +104,12 @@ import { RouterLink } from "vue-router";
         </ul>
       </div>
     </header>
-    <HeroSection />
+    <heroSection :hero="hero" />
   </div>
 </template>
 
 <style scoped>
 .area {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(77, 63, 63, 0),
-      rgba(0, 0, 0, 1)
-    ),
-    url("https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWUo8-WMRML4DtAoby0LFm3QiL6TCH9Vs52tECyxtw5L7VTmzaGF8M7qJxwknZ29ZR13O4Yzefgmj7GjU9TU8LEZz41O1SZqDxbI.webp?r=cca");
   background-repeat: no-repeat;
   background-size: cover;
 }

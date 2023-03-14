@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: "Netflix", sans-serif;
   font-weight: bold;
@@ -18,7 +22,7 @@
   justify-content: center;
   align-items: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Netflix", sans-serif;
   width: 100%;
   height: 100vh;
 }
@@ -33,8 +37,8 @@
 }
 .welcome__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
@@ -45,7 +49,7 @@
   margin-bottom: 50px;
   font-size: 3.5rem;
 }
-.welcome__group {
+.welcome__item {
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -53,17 +57,18 @@
   flex-direction: column;
   text-decoration: none;
 }
-.welcome__group__image--child {
+.welcome__item:hover .welcome__item__image {
+  border: 1px solid #ffffff;
+}
+.welcome__item:hover .welcome__item__text {
+  color: #ffffff;
+}
+.welcome__item__image {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 10px;
 }
-.welcome__group__image--user {
-  width: 12.5rem;
-  height: 12.5rem;
-  border-radius: 10px;
-}
-.welcome__group__icon {
+.welcome__item__icon {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -71,22 +76,10 @@
   border-radius: 100px;
   margin: 35px 35px;
 }
-.welcome__group__text--user {
+.welcome__item__text {
   color: #808080;
   font-size: 1.3rem;
   margin-top: 10px;
-  width: 100px;
-}
-.welcome__group__text--child {
-  color: #808080;
-  font-size: 1.3rem;
-  margin-top: 38px;
-  width: 100px;
-}
-.welcome__group__text--add {
-  color: #808080;
-  font-size: 1.3rem;
-  margin-top: 38px;
   width: 100px;
 }
 .welcome--button {
@@ -108,16 +101,11 @@
   font-size: 1.3rem;
 }
 
-.welcome__group__image--child:hover + .welcome__group__text--child {
-  color: white;
+.welcome__group:hover__image--user {
+  border: 5px solid #ffffff;
 }
-
-.welcome__group__text--child:hover + .welcome__group__image--child {
-  border: 5px solid white;
-}
-
-.welcome__group__image--user:hover + .welcome__group__text--user {
-  color: white;
+.welcome__group:hover__text--user {
+  color: #ffffff;
 }
 
 .header {
@@ -155,6 +143,7 @@
 }
 
 .heroSection {
+  font-weight: bold;
   width: 90%;
   padding-top: 14rem;
   padding-bottom: 20rem;
@@ -172,6 +161,7 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   margin-right: 0.5rem;
+  font-weight: bold;
 }
 .heroSection--attentionButton {
   padding: 0.5rem 1rem;
@@ -179,6 +169,7 @@
   background: rgba(128, 128, 128, 0.4117647059);
   border-style: none;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .carouselArea {
@@ -194,40 +185,37 @@
 .carousel__title {
   color: #ffffff;
   margin-left: 5rem;
+  padding-bottom: 3rem;
   text-align: start;
 }
-.carousel__images {
-  margin: 0 0.25rem;
-  border-radius: 5px;
-}
-.carousel__item {
-  position: relative;
-  display: inline-block;
-}
 .carousel__item:hover .popover__content {
-  z-index: 1;
+  z-index: 5;
   opacity: 1;
   visibility: visible;
-  transition: 1s;
-  height: -moz-fit-content;
-  height: fit-content;
-  transform: translate(0, -20px);
+  transition: 0.1s;
+  transform: translate(0px, -3px);
   transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  width: 350px;
+  height: 400px;
+  border-top: 5px;
+}
+.carousel__item:hover .popover__content__image {
+  width: 100%;
 }
 .carousel__item:hover {
-  z-index: 1;
-  opacity: 1;
   visibility: visible;
-  transition: 1s;
+  transition: 0.1s;
   height: 380px;
+  border-radius: 5px 5px 0px 0px;
 }
 .carousel__item:hover .carousel__images {
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.2);
 }
 
 .popover__content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -235,12 +223,11 @@
   position: absolute;
   background-color: #141414;
   transform: translate(0, 10px);
-  width: auto;
   border-radius: 5px;
 }
 .popover__content:before {
   position: absolute;
-  z-index: -1;
+  z-index: 6;
   content: "";
   transition-duration: 0.3s;
   transition-property: transform;
@@ -303,4 +290,10 @@
   display: flex;
   text-align: start;
   align-items: start;
+}
+
+/*-------------------------------swiper------------------------------------------*/
+.swiper-slide img {
+  border-radius: 5px;
+  width: 270px;
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,9 @@
   background-color: $welcome-bg;
   @include display;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  //font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Netflix", sans-serif;
+
   width: 100%;
   height: 100vh;
 }
@@ -11,7 +13,7 @@
   @include area(750px, 750px);
   @include direction(column);
   &__list {
-    @include display;
+    @include display(flex, flex-start, flex-start);
     column-gap: 40px;
   }
   &__title {
@@ -21,7 +23,7 @@
     margin-bottom: 50px;
     font-size: 3.5rem;
   }
-  &__group {
+  &__item {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -29,15 +31,18 @@
     flex-direction: column;
     text-decoration: none;
 
+    &:hover {
+      .welcome__item__image {
+        border: 1px solid $white;
+      }
+      .welcome__item__text {
+        color: $white;
+      }
+    }
+
     &__image {
-      &--child {
-        @include area(12.5rem, 12.5rem);
-        @include rounded(10px);
-      }
-      &--user {
-        @include area(12.5rem, 12.5rem);
-        @include rounded(10px);
-      }
+      @include area(12.5rem, 12.5rem);
+      @include rounded(10px);
     }
     &__icon {
       align-items: center;
@@ -48,24 +53,10 @@
       margin: 35px 35px;
     }
     &__text {
-      &--user {
-        color: $gray;
-        font-size: 1.3rem;
-        margin-top: 10px;
-        width: 100px;
-      }
-      &--child {
-        color: $gray;
-        font-size: 1.3rem;
-        margin-top: 38px;
-        width: 100px;
-      }
-      &--add {
-        color: $gray;
-        font-size: 1.3rem;
-        margin-top: 38px;
-        width: 100px;
-      }
+      color: $gray;
+      font-size: 1.3rem;
+      margin-top: 10px;
+      width: 100px;
     }
   }
 
@@ -88,15 +79,23 @@
 }
 
 //hover
-
-.welcome__group__image--child:hover + .welcome__group__text--child {
-  color: white;
+.welcome__group:hover {
+  &__image--user {
+    border: 5px solid $white;
+  }
+  &__text--user {
+    color: $white;
+  }
 }
+
+// .welcome__group__image--child:hover + .welcome__group__text--child {
+//   color: white;
+// }
 //       !!grup hover sormam gerek!!
-.welcome__group__text--child:hover + .welcome__group__image--child {
-  border: 5px solid white;
-}
+// .welcome__group__text--child:hover + .welcome__group__image--child {
+//   border: 5px solid white;
+// }
 
-.welcome__group__image--user:hover + .welcome__group__text--user {
-  color: white;
-}
+// .welcome__group__image--user:hover + .welcome__group__text--user {
+//   color: white;
+// }

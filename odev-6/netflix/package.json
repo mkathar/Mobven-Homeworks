@@ -10,6 +10,7 @@
   "dependencies": {
     "@coreui/vue": "^4.7.0",
     "bootstrap": "^5.2.3",
+    "swiper": "^9.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.0.13"
   },

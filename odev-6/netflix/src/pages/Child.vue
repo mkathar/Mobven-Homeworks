@@ -1,9 +1,9 @@
 <script setup>
-import HeaderChild from "../components/headerChild.vue";
-import MoviesChild from "../components/moviesChild.vue";
+import Header from "../components/header.vue";
+import Movies from "../components/movies.vue";
 </script>
 
 <template>
-  <HeaderChild />
-  <MoviesChild />
+  <Header />
+  <Movies />
 </template>
