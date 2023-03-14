@@ -18,10 +18,9 @@
           type="text"
           v-model="pass"
         />
-        <RouterLink class="group__button" :to="href" @click="loginUser">
-          Oturum Aç
+        <RouterLink :to="href">
+          <button @click="loginUser">Oturum aç</button>
         </RouterLink>
-
         <div class="login__content">
           <div class="content__text">
             <input type="radio" class="content__input" />
@@ -81,7 +80,7 @@
 export default {
   data() {
     return {
-      href: "/",
+      href: "/welcome",
       users: [
         {
           mail: "mail@gmail.com",
@@ -111,18 +110,33 @@ export default {
     };
   },
   methods: {
-    loginUser(e) {
-      console.log(e.target);
+    loginUser() {
       this.users.forEach((item) => {
-        if (item.mail == this.email && item.password == this.pass) {
-          return (this.href = "/welcome");
+        if (item.mail.includes(this.email)) {
+          this.login("true");
         } else {
-          return (this.href = "/");
+          this.login("false");
         }
       });
     },
+    login(s) {
+      if (s == "true") {
+        console.log(this.href);
+        return (this.href = "/welcome");
+      } else {
+        console.log(this.href);
+        return (this.href = "/");
+      }
+    },
   },
   components: { RouterLink },
+  watch: {
+    "this.href"() {
+      [0];
+    },
+  },
+
+  mounted() {},
 };
 </script>
 
