@@ -25,7 +25,7 @@
         <router-view />
         <div class="login__content">
           <div class="content__text">
-            <input type="radio" class="content__input" />
+            <input type="checkbox" class="content__input" />
             <p class="content__text--gray">Beni hatırla</p>
           </div>
           <p class="content__text--white">Yardım ister misiniz?</p>
