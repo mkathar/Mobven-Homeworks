@@ -292,8 +292,115 @@ ul {
   align-items: start;
 }
 
+.filter {
+  font-size: 40px;
+  margin-right: 16px;
+  color: #ffffff;
+  margin-left: 3rem;
+  padding: 32px;
+}
+.filter__menu {
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+  height: 40px;
+  width: 80px;
+}
+
 /*-------------------------------swiper------------------------------------------*/
 .swiper-slide img {
   border-radius: 5px;
   width: 270px;
+}
+
+.login {
+  color: #ffffff;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/351323ec-5dbd-4078-a4c2-0fe04dccd586/TR-tr-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+}
+.login__group {
+  display: flex;
+  flex-direction: column;
+}
+.login__area {
+  width: 450px;
+  height: 700px;
+  margin: 10rem auto 5rem auto;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  padding: 60px 68px 40px;
+}
+.login__page__header {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.group__input {
+  height: 50px;
+  background: #333;
+  margin-top: 16px;
+  border: none;
+  color: #8c8c8c;
+  padding-left: 20px;
+  border-radius: 4px;
+}
+.group__button {
+  height: 50px;
+  background-color: #e50914;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 314px;
+  border-style: none;
+}
+.group__link {
+  height: 50px;
+  width: 314px;
+  margin-top: 16px;
+}
+
+.login__content {
+  display: flex;
+  justify-content: space-between;
+}
+.login__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__text {
+  display: flex;
+  align-items: center;
+}
+.content__input {
+  margin: 0;
+}
+.content__text--gray {
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #808080;
+}
+.content__text--blue {
+  color: #0071eb;
+}
+.content__text--white {
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.footer {
+  padding: 5rem 10rem;
+  background-color: rgba(0, 0, 0, 0.7803921569);
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #808080;
+}
+.footer__group {
+  width: 100%;
+  display: flex;
+}
+.footer__group__list {
+  width: 20%;
+  list-style-type: none;
 }/*# sourceMappingURL=main.css.map */

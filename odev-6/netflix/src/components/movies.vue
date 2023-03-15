@@ -1,16 +1,23 @@
 <template>
   <div class="carouselArea">
+    <label v-if="$route.name == 'Home'" class="filter" for="movies">
+      Filmler</label
+    >
     <select
+      id="movies"
       name="movies"
       v-model="selected"
       v-on:change="goster"
       v-if="$route.name == 'Home'"
+      class="filter__menu"
     >
-      <option value="all">hepsi</option>
-      <option value="Gündemdekiler">Gündemdekiler</option>
-      <option value="Ödüllü Filmler">Ödüllü Filmler</option>
-      <option value="Komediler">Komediler</option>
-      <option value="Gerçek Hayattan Uyarlanan Filmler">
+      <option class="filter__item" value="all">Türler</option>
+      <option class="filter__item" value="Gündemdekiler">Gündemdekiler</option>
+      <option class="filter__item" value="Ödüllü Filmler">
+        Ödüllü Filmler
+      </option>
+      <option class="filter__item" value="Komediler">Komediler</option>
+      <option class="filter__item" value="Gerçek Hayattan Uyarlanan Filmler">
         Gerçek Hayattan Uyarlanan Filmler
       </option>
     </select>

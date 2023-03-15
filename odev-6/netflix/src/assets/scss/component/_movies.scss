@@ -122,6 +122,22 @@
     align-items: start;
   }
 }
+
+.filter {
+  font-size: 40px;
+  margin-right: 16px;
+  color: $white;
+  margin-left: 3rem;
+  padding: 32px;
+  &__menu {
+    border: 1px solid $white;
+    background-color: $black;
+    color: $white;
+    height: 40px;
+    width: 80px;
+  }
+}
+
 /*-------------------------------swiper------------------------------------------*/
 .swiper-slide img {
   @include rounded(5px);

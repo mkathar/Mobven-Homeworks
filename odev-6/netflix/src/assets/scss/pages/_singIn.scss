@@ -1,0 +1,98 @@
+.login {
+  color: $white;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/351323ec-5dbd-4078-a4c2-0fe04dccd586/TR-tr-20230306-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+  &__area {
+    width: 450px;
+    height: 700px;
+    margin: 10rem auto 5rem auto;
+    align-items: center;
+    background-color: $black-90;
+    padding: 60px 68px 40px;
+  }
+  &__page__header {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+
+.group {
+  &__input {
+    height: 50px;
+    background: $neongray;
+    margin-top: 16px;
+    border: none;
+    color: $gray-light;
+    padding-left: 20px;
+    border-radius: 4px;
+  }
+  &__button {
+    height: 50px;
+    background-color: $netflix-red;
+    color: $white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 314px;
+    border-style: none;
+  }
+  &__link {
+    height: 50px;
+    width: 314px;
+    margin-top: 16px;
+  }
+}
+
+.login {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.content {
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    margin: 0;
+  }
+  &__text {
+    &--gray {
+      margin-top: 15px;
+      margin-left: 5px;
+      color: $gray;
+    }
+    &--blue {
+      color: $blue;
+    }
+    &--white {
+      color: $white;
+      margin-top: 15px;
+    }
+  }
+}
+
+.footer {
+  padding: 5rem 10rem;
+  background-color: $black-90;
+  height: fit-content;
+  color: $gray;
+  &__group {
+    width: 100%;
+    display: flex;
+    &__list {
+      width: 20%;
+      list-style-type: none;
+    }
+  }
+}
