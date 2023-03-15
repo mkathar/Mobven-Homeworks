@@ -262,7 +262,6 @@
 <style>
 .cards {
   display: flex;
-
   flex-wrap: wrap;
 }
 .card {
