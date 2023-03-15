@@ -82,18 +82,3 @@
     }
   }
 }
-
-.footer {
-  padding: 5rem 10rem;
-  background-color: $black-90;
-  height: fit-content;
-  color: $gray;
-  &__group {
-    width: 100%;
-    display: flex;
-    &__list {
-      width: 20%;
-      list-style-type: none;
-    }
-  }
-}

@@ -21,7 +21,7 @@
         Gerçek Hayattan Uyarlanan Filmler
       </option>
     </select>
-    <article class="carousel" v-if="filtered[0]">
+    <article class="carousel" v-if="filtered[0] && $route.name == 'Home'">
       <h1 class="carousel__title">{{ filtered[0].name }}</h1>
       <swiper
         :modules="modules"
@@ -68,7 +68,7 @@
         </swiper-slide>
       </swiper>
     </article>
-    <article class="carousel" v-if="filtered[1]">
+    <article class="carousel" v-if="filtered[1] && $route.name == 'Home'">
       <h1 class="carousel__title">{{ filtered[1].name }}</h1>
       <swiper
         :modules="modules"
@@ -115,7 +115,7 @@
         </swiper-slide>
       </swiper>
     </article>
-    <article class="carousel" v-if="filtered[2]">
+    <article class="carousel" v-if="filtered[2] && $route.name == 'Home'">
       <h1 class="carousel__title">{{ filtered[2].name }}</h1>
       <swiper
         :modules="modules"
@@ -162,7 +162,7 @@
         </swiper-slide>
       </swiper>
     </article>
-    <article class="carousel" v-if="filtered[1]">
+    <article class="carousel" v-if="filtered[1] && $route.name == 'Home'">
       <h1 class="carousel__title">{{ filtered[1].name }}</h1>
       <swiper
         :modules="modules"
@@ -209,7 +209,195 @@
         </swiper-slide>
       </swiper>
     </article>
-    <article class="carousel" v-if="filtered[3]">
+    <article class="carousel" v-if="filtered[3] && $route.name == 'Home'">
+      <h1 class="carousel__title">{{ filtered[3].name }}</h1>
+      <swiper
+        :modules="modules"
+        :slides-per-view="6.5"
+        :space-between="0"
+        navigation
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide
+          class="carousel__item"
+          v-for="(item, index) in filtered[3].film"
+        >
+          <div class="popover__content">
+            <img
+              class="popover__content__image"
+              alt="Film"
+              :src="baseUrl + item.link"
+            />
+            <div class="popover__message">
+              <div class="popover__ıcons">
+                <div>
+                  <Icon name="play" fill="white" />
+                  <Icon name="add" fill="white" />
+                  <Icon name="like" fill="white" />
+                </div>
+                <Icon name="cardDown" fill="white" />
+              </div>
+              <p class="popover__text">
+                <span class="popover__text--match">%98 Eşleşme</span>
+                <span class="popover__text--age">+18</span>
+                <span class="popover__text--season">5 Sezon</span>
+                <span class="popover__text--quality">HD</span>
+              </p>
+              <p class="popover__type">
+                Şiddet içerikli - Sert Gerçekçi - Gerilim
+              </p>
+              <h6 class="popover__like"><Icon name="like" /> Çok Beğenildi</h6>
+            </div>
+          </div>
+          <img class="carousel__images" :src="baseUrl + item.link" alt="" />
+        </swiper-slide>
+      </swiper>
+    </article>
+    <article class="carousel" v-if="filtered[0] && $route.name == 'Child'">
+      <h1 class="carousel__title">{{ filtered[0].name }}</h1>
+      <swiper
+        :modules="modules"
+        :slides-per-view="6.5"
+        :space-between="0"
+        navigation
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide
+          class="carousel__item"
+          v-for="(item, index) in filtered[0].film"
+        >
+          <div class="popover__content">
+            <img
+              class="popover__content__image"
+              alt="Film"
+              :src="baseUrl + item.link"
+            />
+            <div class="popover__message">
+              <div class="popover__ıcons">
+                <div>
+                  <Icon name="play" fill="white" />
+                  <Icon name="add" fill="white" />
+                  <Icon name="like" fill="white" />
+                </div>
+                <Icon name="cardDown" fill="white" />
+              </div>
+              <p class="popover__text">
+                <span class="popover__text--match">%98 Eşleşme</span>
+                <span class="popover__text--age">+18</span>
+                <span class="popover__text--season">5 Sezon</span>
+                <span class="popover__text--quality">HD</span>
+              </p>
+              <p class="popover__type">
+                Şiddet içerikli - Sert Gerçekçi - Gerilim
+              </p>
+              <h6 class="popover__like"><Icon name="like" /> Çok Beğenildi</h6>
+            </div>
+          </div>
+          <img class="carousel__images" :src="baseUrl + item.link" alt="" />
+        </swiper-slide>
+      </swiper>
+    </article>
+    <article class="carousel" v-if="filtered[1] && $route.name == 'Child'">
+      <h1 class="carousel__title">{{ filtered[1].name }}</h1>
+      <swiper
+        :modules="modules"
+        :slides-per-view="6.5"
+        :space-between="0"
+        navigation
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide
+          class="carousel__item"
+          v-for="(item, index) in filtered[1].film"
+        >
+          <div class="popover__content">
+            <img
+              class="popover__content__image"
+              alt="Film"
+              :src="baseUrl + item.link"
+            />
+            <div class="popover__message">
+              <div class="popover__ıcons">
+                <div>
+                  <Icon name="play" fill="white" />
+                  <Icon name="add" fill="white" />
+                  <Icon name="like" fill="white" />
+                </div>
+                <Icon name="cardDown" fill="white" />
+              </div>
+              <p class="popover__text">
+                <span class="popover__text--match">%98 Eşleşme</span>
+                <span class="popover__text--age">+18</span>
+                <span class="popover__text--season">5 Sezon</span>
+                <span class="popover__text--quality">HD</span>
+              </p>
+              <p class="popover__type">
+                Şiddet içerikli - Sert Gerçekçi - Gerilim
+              </p>
+              <h6 class="popover__like"><Icon name="like" /> Çok Beğenildi</h6>
+            </div>
+          </div>
+          <img class="carousel__images" :src="baseUrl + item.link" alt="" />
+        </swiper-slide>
+      </swiper>
+    </article>
+    <article class="carousel" v-if="filtered[2] && $route.name == 'Child'">
+      <h1 class="carousel__title">{{ filtered[2].name }}</h1>
+      <swiper
+        :modules="modules"
+        :slides-per-view="6.5"
+        :space-between="0"
+        navigation
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide
+          class="carousel__item"
+          v-for="(item, index) in filtered[2].film"
+        >
+          <div class="popover__content">
+            <img
+              class="popover__content__image"
+              alt="Film"
+              :src="baseUrl + item.link"
+            />
+            <div class="popover__message">
+              <div class="popover__ıcons">
+                <div>
+                  <Icon name="play" fill="white" />
+                  <Icon name="add" fill="white" />
+                  <Icon name="like" fill="white" />
+                </div>
+                <Icon name="cardDown" fill="white" />
+              </div>
+              <p class="popover__text">
+                <span class="popover__text--match">%98 Eşleşme</span>
+                <span class="popover__text--age">+18</span>
+                <span class="popover__text--season">5 Sezon</span>
+                <span class="popover__text--quality">HD</span>
+              </p>
+              <p class="popover__type">
+                Şiddet içerikli - Sert Gerçekçi - Gerilim
+              </p>
+              <h6 class="popover__like"><Icon name="like" /> Çok Beğenildi</h6>
+            </div>
+          </div>
+          <img class="carousel__images" :src="baseUrl + item.link" alt="" />
+        </swiper-slide>
+      </swiper>
+    </article>
+    <article class="carousel" v-if="filtered[3] && $route.name == 'Child'">
       <h1 class="carousel__title">{{ filtered[3].name }}</h1>
       <swiper
         :modules="modules"
@@ -257,6 +445,7 @@
       </swiper>
     </article>
   </div>
+  <Footer />
 </template>
 
 <style>
@@ -286,6 +475,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Footer from "./footer.vue";
 </script>
 <script>
 export default {
@@ -305,6 +495,7 @@ export default {
       if (this.$route.name != "Home") {
         return;
       }
+
       this.filtered = this.movies;
 
       this.filtered = this.movies.filter((item) => {
@@ -320,6 +511,8 @@ export default {
     },
   },
   mounted() {
+    this.filtered = [];
+    this.filtered = this.movies;
     this.goster();
   },
 };

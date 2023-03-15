@@ -323,6 +323,261 @@ export default {
                 },
               ],
             },
+            {
+              name: "Doğa",
+              film: [
+                {
+                  id: 0,
+                  link: "/AAAABd0-rnrHYYmMpCPR-HaN2OHqBIhXERcjCiBYltd1U1DHDH-74-u6y2Im1Xha74Jx5WITFJ_njLskfeg0OHmdoL5Tu2ybPuNnwcm5f8h8oyZSh_uT99mNHf5mKK_1IC8xpxUK.jpg?r=49a",
+                },
+                {
+                  id: 1,
+                  link: "/AAAABYzfkEXDyAdS6XihhFOpp60SjD-hi42tPJu6qndpVtc0xWg1bHQr4q2CRpnzglivIdo-GKIqq0VBkYHu7Pauq86ltJ0EAqInvskBfgUYYKLcWCttNifFzEOmf7ov4xL0lYfZ.jpg?r=503",
+                },
+                {
+                  id: 2,
+                  link: "/AAAABXHP7ibfiMqOTjvpGEUSUTVugkEyIRITTKtPs_AX0IWJNIylze0rhZkrX2TOQEdy8ZO8r5hdMFyFUuVsHoDT-RrFtdFGctfvVrkQIuTrT9n0BRd2obg763c_xmQiBp96irBunAxPn8dacf6dUXBTZG-gP12Q9cav3xojHXNXEyDKTXPYaDqxk9I5e2hHe9k.jpg?r=be0",
+                },
+                {
+                  id: 3,
+                  link: "/AAAABfQK5zQufkSyOS4FMPT9C2T-lx2Quldx3iRbO9aPinPkmpm5HOY-zkMEO-GBVUUsCYyhaXmwr7g1RtBpXgXL8RBGIhHzdeD-hdk.webp?r=099",
+                },
+                {
+                  id: 4,
+                  link: "/AAAABaUcZlCRwrQiIzd0kkRn5wffm6Zgi0WI2ivXTSi6jp7ho1r-s8-wVlcpJxnX8-Wex5sk5d39LAvr30tBRajSjNE98wXGr4WNw-Q.webp?r=c3e",
+                },
+                {
+                  id: 5,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 6,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 7,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 8,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 9,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 11,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 13,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 14,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 15,
+                  link: "/AAAABWEa37ss-C_gVsAWk4tXOArlpoQGigrXpx6si9SdcdprgpiXS0YIVpqQLgok0zRQz_i9nxv1UENWuGmXRqSJHEF6RTpeLJcl1MC0uoDP4SfwI1k8zcliwrGT592Zfqk6vz39ndyAjrZXyRpmBMlyeH9DkMVYiCj22sI.webp?r=1cb",
+                },
+                {
+                  id: 16,
+                  link: "/AAAABX7-EcEiRRh6XNThSJiu9LrMDSs5qVKRnT2ZANlZUnPfct8Xwsd_sDYu4xYC9ak-AgCuHg8tyAhjcHlol3oZcXtu6VEnrRCwY09uvfccm1Au5bF-gskPcke5OjaQhlA1kJEus6HETjWgeku_yXxBDcTBJH9WOnBBuVolpV_5fnKolIhJ0yjDKIbi8dOG9E7uukas_6KmoBR4T5V0PZUAhmtkMLTaA5aFPjpYRzFfShUGgpJx9WEWn8ftADawJkLjj2Txy0PuaS-NZ7E9TE47A-zqCsEkxB9jAMjokkaf6Ov5wvDO7sHMKYZbhYKeSthglYN4gXsApqpX-GfqGmvJST0k.webp?r=0ae",
+                },
+                {
+                  id: 17,
+                  link: "/AAAABZpapWMAi9iCNvBtC6Dsl2knbUKQIASlb-PO4_7znXtjPrr3Sq2DCMnXTXj5XP_j1keIvGhj4pcuXlHEyshU2xEngLrodE6TGyw.webp?r=a1d",
+                },
+                {
+                  id: 18,
+                  link: "/AAAABek_Myo5yRunHBa5P20_T5swiPZ2jZZheXdbDYkprLYfNHp_msHnghiwGMHQ6UTDMG7FpPTBEFK4qXV8E3LQTxoYXXP5ZENxuSfPp4tr80qCHPiKvsiy90b030FEnoxH3FPX.jpg?r=93b",
+                },
+                {
+                  id: 19,
+                  link: "/AAAABWaf8Cs8R9PR1u5Z7f9A3BRkyDmaSVUAb6pYnz9RiSgeJTfZ1XSbC_sfUIwPtsAQeTqV0OjPWzsuvQRvds-vP9vZEABOzRUn8zIdTjTpdeC0PUhKOuxlq2sFK1q-Ne_I2YRUk6FIlT0_7ZCmsRZfjt_KDEsJq8jfB0Y.webp?r=7b2",
+                },
+              ],
+            },
+            {
+              name: "Sevimli",
+              film: [
+                {
+                  id: 0,
+                  link: "/AAAABd0-rnrHYYmMpCPR-HaN2OHqBIhXERcjCiBYltd1U1DHDH-74-u6y2Im1Xha74Jx5WITFJ_njLskfeg0OHmdoL5Tu2ybPuNnwcm5f8h8oyZSh_uT99mNHf5mKK_1IC8xpxUK.jpg?r=49a",
+                },
+                {
+                  id: 1,
+                  link: "/AAAABYzfkEXDyAdS6XihhFOpp60SjD-hi42tPJu6qndpVtc0xWg1bHQr4q2CRpnzglivIdo-GKIqq0VBkYHu7Pauq86ltJ0EAqInvskBfgUYYKLcWCttNifFzEOmf7ov4xL0lYfZ.jpg?r=503",
+                },
+                {
+                  id: 2,
+                  link: "/AAAABXHP7ibfiMqOTjvpGEUSUTVugkEyIRITTKtPs_AX0IWJNIylze0rhZkrX2TOQEdy8ZO8r5hdMFyFUuVsHoDT-RrFtdFGctfvVrkQIuTrT9n0BRd2obg763c_xmQiBp96irBunAxPn8dacf6dUXBTZG-gP12Q9cav3xojHXNXEyDKTXPYaDqxk9I5e2hHe9k.jpg?r=be0",
+                },
+                {
+                  id: 3,
+                  link: "/AAAABfQK5zQufkSyOS4FMPT9C2T-lx2Quldx3iRbO9aPinPkmpm5HOY-zkMEO-GBVUUsCYyhaXmwr7g1RtBpXgXL8RBGIhHzdeD-hdk.webp?r=099",
+                },
+                {
+                  id: 4,
+                  link: "/AAAABaUcZlCRwrQiIzd0kkRn5wffm6Zgi0WI2ivXTSi6jp7ho1r-s8-wVlcpJxnX8-Wex5sk5d39LAvr30tBRajSjNE98wXGr4WNw-Q.webp?r=c3e",
+                },
+                {
+                  id: 5,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 6,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 7,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 8,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 9,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 11,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 13,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 14,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 15,
+                  link: "/AAAABWEa37ss-C_gVsAWk4tXOArlpoQGigrXpx6si9SdcdprgpiXS0YIVpqQLgok0zRQz_i9nxv1UENWuGmXRqSJHEF6RTpeLJcl1MC0uoDP4SfwI1k8zcliwrGT592Zfqk6vz39ndyAjrZXyRpmBMlyeH9DkMVYiCj22sI.webp?r=1cb",
+                },
+                {
+                  id: 16,
+                  link: "/AAAABX7-EcEiRRh6XNThSJiu9LrMDSs5qVKRnT2ZANlZUnPfct8Xwsd_sDYu4xYC9ak-AgCuHg8tyAhjcHlol3oZcXtu6VEnrRCwY09uvfccm1Au5bF-gskPcke5OjaQhlA1kJEus6HETjWgeku_yXxBDcTBJH9WOnBBuVolpV_5fnKolIhJ0yjDKIbi8dOG9E7uukas_6KmoBR4T5V0PZUAhmtkMLTaA5aFPjpYRzFfShUGgpJx9WEWn8ftADawJkLjj2Txy0PuaS-NZ7E9TE47A-zqCsEkxB9jAMjokkaf6Ov5wvDO7sHMKYZbhYKeSthglYN4gXsApqpX-GfqGmvJST0k.webp?r=0ae",
+                },
+                {
+                  id: 17,
+                  link: "/AAAABZpapWMAi9iCNvBtC6Dsl2knbUKQIASlb-PO4_7znXtjPrr3Sq2DCMnXTXj5XP_j1keIvGhj4pcuXlHEyshU2xEngLrodE6TGyw.webp?r=a1d",
+                },
+                {
+                  id: 18,
+                  link: "/AAAABek_Myo5yRunHBa5P20_T5swiPZ2jZZheXdbDYkprLYfNHp_msHnghiwGMHQ6UTDMG7FpPTBEFK4qXV8E3LQTxoYXXP5ZENxuSfPp4tr80qCHPiKvsiy90b030FEnoxH3FPX.jpg?r=93b",
+                },
+                {
+                  id: 19,
+                  link: "/AAAABWaf8Cs8R9PR1u5Z7f9A3BRkyDmaSVUAb6pYnz9RiSgeJTfZ1XSbC_sfUIwPtsAQeTqV0OjPWzsuvQRvds-vP9vZEABOzRUn8zIdTjTpdeC0PUhKOuxlq2sFK1q-Ne_I2YRUk6FIlT0_7ZCmsRZfjt_KDEsJq8jfB0Y.webp?r=7b2",
+                },
+              ],
+            },
+            {
+              name: "Herkes Bunları İzliyor",
+              film: [
+                {
+                  id: 0,
+                  link: "/AAAABd0-rnrHYYmMpCPR-HaN2OHqBIhXERcjCiBYltd1U1DHDH-74-u6y2Im1Xha74Jx5WITFJ_njLskfeg0OHmdoL5Tu2ybPuNnwcm5f8h8oyZSh_uT99mNHf5mKK_1IC8xpxUK.jpg?r=49a",
+                },
+                {
+                  id: 1,
+                  link: "/AAAABYzfkEXDyAdS6XihhFOpp60SjD-hi42tPJu6qndpVtc0xWg1bHQr4q2CRpnzglivIdo-GKIqq0VBkYHu7Pauq86ltJ0EAqInvskBfgUYYKLcWCttNifFzEOmf7ov4xL0lYfZ.jpg?r=503",
+                },
+                {
+                  id: 2,
+                  link: "/AAAABXHP7ibfiMqOTjvpGEUSUTVugkEyIRITTKtPs_AX0IWJNIylze0rhZkrX2TOQEdy8ZO8r5hdMFyFUuVsHoDT-RrFtdFGctfvVrkQIuTrT9n0BRd2obg763c_xmQiBp96irBunAxPn8dacf6dUXBTZG-gP12Q9cav3xojHXNXEyDKTXPYaDqxk9I5e2hHe9k.jpg?r=be0",
+                },
+                {
+                  id: 3,
+                  link: "/AAAABfQK5zQufkSyOS4FMPT9C2T-lx2Quldx3iRbO9aPinPkmpm5HOY-zkMEO-GBVUUsCYyhaXmwr7g1RtBpXgXL8RBGIhHzdeD-hdk.webp?r=099",
+                },
+                {
+                  id: 4,
+                  link: "/AAAABaUcZlCRwrQiIzd0kkRn5wffm6Zgi0WI2ivXTSi6jp7ho1r-s8-wVlcpJxnX8-Wex5sk5d39LAvr30tBRajSjNE98wXGr4WNw-Q.webp?r=c3e",
+                },
+                {
+                  id: 5,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 6,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 7,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 8,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 9,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 11,
+                  link: "/AAAABc16VqS10F5wljG5g8DqIoiw5lLEBi8GpiuQP_CUb_fzbUm1DKeACsiXwHXUmbRhdV3Z8ih41_D0QhcSKkyDE97JFDNbGVCCOo4.webp?r=bb8",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABYuf4bns-xNTusYmxL_b7e_rTQnC1MxAbBhc7K70Y5hs1DX3hpRCoQOPpK9_8aEnM_aR_cJyrpJhoEkWURMqo-2_8Wz_jtLSZLI_9Vnhfy5V4xEm7a9IFDHGaAFzfOBJY7YbhM_IJKb2UcYfOha9k15LjI3NfxhlFrc.webp?r=2ff",
+                },
+                {
+                  id: 12,
+                  link: "/AAAABY7_0n5RaaMaxwgCfmbH8VV4Ppl8pNazKl_FxLooOfaG8iCAJNbXitpJMRUy_EK0aZThq3yx8YQ9lSUeHHNS2E-MDp7wIz6xD1Q.webp?r=a6c",
+                },
+                {
+                  id: 13,
+                  link: "/AAAABROMJM1_Y3inyIjkee0z4ngF8Qllgc9AUxbFfhgCyaxtLdSz0l3DyOtiYE6O1Wfiyj7EV7To59saXDFLYytHXhAJE1OO4tVUgSk.webp?r=193",
+                },
+                {
+                  id: 14,
+                  link: "/AAAABTdmoSFEmSw4dbnkLzNnXGrBvgSPFaZCiHeUTw3unUa13l_uKOBizh0peWAnzqNMMwlub2hWBRIBxnMsviQyYGtUdpEmrOkp-nS1-CCSkiVD3B9y1f-4yXD3NJCMT2AsFFnl.jpg?r=27f",
+                },
+                {
+                  id: 15,
+                  link: "/AAAABWEa37ss-C_gVsAWk4tXOArlpoQGigrXpx6si9SdcdprgpiXS0YIVpqQLgok0zRQz_i9nxv1UENWuGmXRqSJHEF6RTpeLJcl1MC0uoDP4SfwI1k8zcliwrGT592Zfqk6vz39ndyAjrZXyRpmBMlyeH9DkMVYiCj22sI.webp?r=1cb",
+                },
+                {
+                  id: 16,
+                  link: "/AAAABX7-EcEiRRh6XNThSJiu9LrMDSs5qVKRnT2ZANlZUnPfct8Xwsd_sDYu4xYC9ak-AgCuHg8tyAhjcHlol3oZcXtu6VEnrRCwY09uvfccm1Au5bF-gskPcke5OjaQhlA1kJEus6HETjWgeku_yXxBDcTBJH9WOnBBuVolpV_5fnKolIhJ0yjDKIbi8dOG9E7uukas_6KmoBR4T5V0PZUAhmtkMLTaA5aFPjpYRzFfShUGgpJx9WEWn8ftADawJkLjj2Txy0PuaS-NZ7E9TE47A-zqCsEkxB9jAMjokkaf6Ov5wvDO7sHMKYZbhYKeSthglYN4gXsApqpX-GfqGmvJST0k.webp?r=0ae",
+                },
+                {
+                  id: 17,
+                  link: "/AAAABZpapWMAi9iCNvBtC6Dsl2knbUKQIASlb-PO4_7znXtjPrr3Sq2DCMnXTXj5XP_j1keIvGhj4pcuXlHEyshU2xEngLrodE6TGyw.webp?r=a1d",
+                },
+                {
+                  id: 18,
+                  link: "/AAAABek_Myo5yRunHBa5P20_T5swiPZ2jZZheXdbDYkprLYfNHp_msHnghiwGMHQ6UTDMG7FpPTBEFK4qXV8E3LQTxoYXXP5ZENxuSfPp4tr80qCHPiKvsiy90b030FEnoxH3FPX.jpg?r=93b",
+                },
+                {
+                  id: 19,
+                  link: "/AAAABWaf8Cs8R9PR1u5Z7f9A3BRkyDmaSVUAb6pYnz9RiSgeJTfZ1XSbC_sfUIwPtsAQeTqV0OjPWzsuvQRvds-vP9vZEABOzRUn8zIdTjTpdeC0PUhKOuxlq2sFK1q-Ne_I2YRUk6FIlT0_7ZCmsRZfjt_KDEsJq8jfB0Y.webp?r=7b2",
+                },
+              ],
+            },
           ],
           hero: {
             pageBackground:
