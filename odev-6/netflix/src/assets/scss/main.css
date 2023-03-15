@@ -132,6 +132,10 @@ ul {
   color: #ffffff;
   text-decoration: none;
 }
+.header__group__link--profile {
+  color: #000000;
+  text-decoration: none;
+}
 .header__group--button {
   width: 150px;
   background-color: #e50914;

@@ -59,7 +59,7 @@ export default {
             >
             <router-view />
           </li>
-          <li v-if="$route.name == 'Child'" class="header__group__link">
+          <li v-if="$route.name == 'Child'">
             <RouterLink to="/welcome">
               <button class="header__group--button">Çocuktan Çık</button>
             </RouterLink>
@@ -85,7 +85,9 @@ export default {
                   Çocuk</CDropdownItem
                 >
                 <CDropdownItem href="#"
-                  ><RouterLink to="/welcome"
+                  ><RouterLink
+                    to="/welcome"
+                    class="header__group__link--profile"
                     ><Icon name="pen" /> Profil Yönetimi</RouterLink
                   >
                 </CDropdownItem>
