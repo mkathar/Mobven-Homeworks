@@ -511,9 +511,15 @@ export default {
     },
   },
   mounted() {
-    this.filtered = [];
     this.filtered = this.movies;
     this.goster();
+  },
+  watch: {
+    movies(newValue, oldValue) {
+      console.log(oldValue);
+      console.log(newValue);
+      this.filtered = newValue;
+    },
   },
 };
 </script>
