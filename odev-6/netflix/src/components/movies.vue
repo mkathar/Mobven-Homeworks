@@ -448,20 +448,6 @@
   <Footer />
 </template>
 
-<style>
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-.card {
-  width: 300px;
-  height: 500px;
-}
-.card--image {
-  width: 200px;
-  height: 200px;
-}
-</style>
 <script setup>
 import { Icon } from "../icons";
 // import Swiper core and required modules
@@ -487,9 +473,7 @@ export default {
         "https://occ-0-778-2774.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk",
     };
   },
-  props: {
-    movies: Array,
-  },
+  props: { movies: Array },
   methods: {
     filtrele() {
       if (this.$route.name != "Home") {
@@ -511,9 +495,10 @@ export default {
     },
   },
   mounted() {
-    this.filtered = this.movies;
     this.goster();
   },
+  created() {},
+
   watch: {
     movies(newValue, oldValue) {
       console.log(oldValue);
