@@ -69,6 +69,7 @@ ul {
   margin: 1rem auto;
   height: 40px;
   width: 250px;
+  padding-left: 10px;
 }
 .filter__group {
   justify-content: center;
