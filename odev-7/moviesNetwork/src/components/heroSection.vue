@@ -1,7 +1,7 @@
 <template>
   <swiper class="mySwiper">
     <swiper-slide v-for="movie in getAllMovies" :key="movie.id">
-      <img :src="getImgURL + movie.backdrop_path" alt="" />
+      <img :src="getImgBDURL + movie.backdrop_path" alt="" />
       <h1 class="mySwiper__title">{{ movie.title }}</h1></swiper-slide
     >
   </swiper>
@@ -23,7 +23,7 @@ export default {
   setup() {
     return {};
   },
-  computed: { ...mapGetters(["getAllMovies", "getImgURL"]) },
+  computed: { ...mapGetters(["getAllMovies", "getImgBDURL"]) },
   methods: {
     ...mapActions(["getMovies"]),
   },

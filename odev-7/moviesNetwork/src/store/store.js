@@ -5,11 +5,13 @@ const store = createStore({
   namespaced: true,
   state: {
     movies: [],
-    imgBaseURL: "https://image.tmdb.org/t/p/w1280",
+    imgBackdropBaseURL: "https://image.tmdb.org/t/p/w1280",
+    imgPosterBaseURL: "https://image.tmdb.org/t/p/w200",
   },
   getters: {
     getAllMovies: (state) => state.movies,
-    getImgURL: (state) => state.imgBaseURL,
+    getImgBDURL: (state) => state.imgBackdropBaseURL,
+    getImgPURL: (state) => state.imgPosterBaseURL,
   },
   mutations: {
     SET_MOVIES(state, data) {

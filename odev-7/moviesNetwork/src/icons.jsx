@@ -17,7 +17,7 @@ const netflixIcon = ({ size }) => {
     </svg>
   );
 };
-const addIcon = ({ size, fill }) => {
+const addIcon = ({ size }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,18 +25,15 @@ const addIcon = ({ size, fill }) => {
       viewBox="0 96 960 960"
       width={size}
     >
-      <path
-        d="M433 873V623H183v-94h250V279h94v250h250v94H527v250h-94Z"
-        fill={fill}
-      />
+      <path d="M433 873V623H183v-94h250V279h94v250h250v94H527v250h-94Z" />
     </svg>
   );
 };
 const searchIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +51,10 @@ const searchIcon = ({ size }) => {
 const bellIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
+      width="30"
+      height="30"
       viewBox="0 0 24 24"
-      fill="none"
+      fill="white"
       xmlns="http://www.w3.org/2000/svg"
       class="Hawkins-Icon Hawkins-Icon-Standard"
     >
@@ -65,16 +62,16 @@ const bellIcon = ({ size }) => {
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M13 4.07092C16.3922 4.55624 18.9998 7.4736 18.9998 11V15.2538C20.0486 15.3307 21.0848 15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11C4.99978 7.47345 7.6076 4.55599 11 4.07086V2L13 2V4.07092ZM16.9998 15.1287V11C16.9998 8.23858 14.7612 6 11.9998 6C9.23836 6 6.99978 8.23858 6.99978 11V15.1287C8.64041 15.0437 10.3089 15 11.9998 15C13.6907 15 15.3591 15.0437 16.9998 15.1287ZM8.62568 19.3712C8.6621 20.5173 10.1509 22 11.9993 22C13.8477 22 15.3365 20.5173 15.373 19.3712C15.38 19.1489 15.1756 19 14.9531 19H9.04555C8.82308 19 8.61862 19.1489 8.62568 19.3712Z"
-        fill="currentColor"
+        fill="white"
       ></path>
     </svg>
   );
 };
-const downIcon = ({ size, fill }) => {
+const downIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
+      width="16"
+      height="16"
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +81,7 @@ const downIcon = ({ size, fill }) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M12.5225,5.99902c0.1576,0 0.2272,0.19843 0.1041,0.29687l-4.41973,3.53579c-0.12176,0.09741 -0.29477,0.09741 -0.41653,0l-4.41975,-3.53579c-0.12304,-0.09844 -0.05344,-0.29687 0.10414,-0.29687z"
-        fill={fill}
+        fill="currentColor"
       ></path>
     </svg>
   );
@@ -95,7 +92,7 @@ const penIcon = ({ size }) => {
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="currentColor"
+      fill="white"
       xmlns="http://www.w3.org/2000/svg"
       class="Hawkins-Icon Hawkins-Icon-Standard"
     >
@@ -103,7 +100,7 @@ const penIcon = ({ size }) => {
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M22.2071 7.79285L15.2071 0.792847L13.7929 2.20706L20.7929 9.20706L22.2071 7.79285ZM13.2071 3.79285C12.8166 3.40232 12.1834 3.40232 11.7929 3.79285L2.29289 13.2928C2.10536 13.4804 2 13.7347 2 14V20C2 20.5522 2.44772 21 3 21H9C9.26522 21 9.51957 20.8946 9.70711 20.7071L19.2071 11.2071C19.5976 10.8165 19.5976 10.1834 19.2071 9.79285L13.2071 3.79285ZM17.0858 10.5L8.58579 19H4V14.4142L12.5 5.91417L17.0858 10.5Z"
-        fill="currentColor"
+        fill="white"
       ></path>
     </svg>
   );
@@ -129,10 +126,10 @@ const transferIcon = ({ size }) => {
 const accountIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
-      fill="none"
+      fill="white"
       xmlns="http://www.w3.org/2000/svg"
       class="Hawkins-Icon Hawkins-Icon-Standard"
     >
@@ -140,7 +137,7 @@ const accountIcon = ({ size }) => {
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M9.00011 8C9.00011 6.34315 10.3433 5 12.0001 5C13.657 5 15.0001 6.34315 15.0001 8C15.0001 9.65685 13.657 11 12.0001 11C10.3433 11 9.00011 9.65685 9.00011 8ZM12.0001 3C9.23869 3 7.00011 5.23858 7.00011 8C7.00011 10.7614 9.23869 13 12.0001 13C14.7615 13 17.0001 10.7614 17.0001 8C17.0001 5.23858 14.7615 3 12.0001 3ZM5.98069 21.1961C6.46867 18.7563 8.61095 17 11.0991 17H12.9011C15.3893 17 17.5316 18.7563 18.0195 21.1961L19.9807 20.8039C19.3057 17.4292 16.3426 15 12.9011 15H11.0991C7.65759 15 4.69447 17.4292 4.01953 20.8039L5.98069 21.1961Z"
-        fill="currentColor"
+        fill="white"
       ></path>
     </svg>
   );
@@ -148,8 +145,8 @@ const accountIcon = ({ size }) => {
 const helpIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -164,89 +161,28 @@ const helpIcon = ({ size }) => {
     </svg>
   );
 };
-const playIcon = ({ size, fill }) => {
+const menuIcon = ({ size }) => {
   return (
     <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill={fill}
+      height="32px"
+      id="Layer_1"
+      style="enable-background:new 0 0 32 32;"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      fill="white"
+      xml:space="preserve"
       xmlns="http://www.w3.org/2000/svg"
-      class="Hawkins-Icon Hawkins-Icon-Standard"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <path
-        d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
-        fill={fill}
-      ></path>
+        fill="white"
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"
+      />
     </svg>
   );
 };
-const attentionIcon = ({ size, fill }) => {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill={fill}
-      xmlns="http://www.w3.org/2000/svg"
-      class="Hawkins-Icon Hawkins-Icon-Standard"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
-        fill={fill}
-      ></path>
-    </svg>
-  );
-};
-
-const cardDownIcon = ({ size, fill }) => {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="Hawkins-Icon Hawkins-Icon-Standard"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z"
-        fill={fill}
-      ></path>
-    </svg>
-  );
-};
-const likeIcon = ({ size, fill }) => {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill={fill}
-      xmlns="http://www.w3.org/2000/svg"
-      class="ltr-157xhr7"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M13.407 6.25579L13.313 5.50407C13.1342 4.07353 11.9181 3 10.4764 3C10.2133 3 10 3.21331 10 3.47644V6.7132C10 6.90062 9.94733 7.08427 9.848 7.2432L7.90742 10.3481C7.64516 10.7677 7.23665 11.0752 6.76086 11.2112L4.72528 11.7928C4.29598 11.9154 4 12.3078 4 12.7543V18.3161C4 18.6938 4.30618 19 4.68387 19C5.874 19 7.04352 19.3106 8.07684 19.9011L8.25 20C9.39679 20.6553 10.6947 21 12.0156 21H13H16H16.5C17.3284 21 18 20.3284 18 19.5C18 19.1158 17.8556 18.7654 17.6181 18.5H18C18.8284 18.5 19.5 17.8284 19.5 17C19.5 16.4601 19.2147 15.9868 18.7867 15.7226C19.478 15.5888 20 14.9804 20 14.25C20 13.4216 19.3284 12.75 18.5 12.75H18.3294C18.7336 12.4813 19 12.0217 19 11.5C19 10.6716 18.3284 10 17.5 10H13.125L13.407 7.74421C13.4688 7.24999 13.4688 6.75001 13.407 6.25579Z"
-        fill={fill}
-      ></path>
-    </svg>
-  );
-};
-const worldIcon = ({ size, fill }) => {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" height={size} width={size}>
-      <path d="M24 44q-4.2 0-7.85-1.575Q12.5 40.85 9.8 38.15q-2.7-2.7-4.25-6.375Q4 28.1 4 23.9t1.55-7.825Q7.1 12.45 9.8 9.75t6.35-4.225Q19.8 4 24 4q4.2 0 7.85 1.525Q35.5 7.05 38.2 9.75q2.7 2.7 4.25 6.325Q44 19.7 44 23.9t-1.55 7.875Q40.9 35.45 38.2 38.15t-6.35 4.275Q28.2 44 24 44Zm0-2.9q1.75-1.8 2.925-4.125Q28.1 34.65 28.85 31.45H19.2q.7 3 1.875 5.4Q22.25 39.25 24 41.1Zm-4.25-.6q-1.25-1.9-2.15-4.1-.9-2.2-1.5-4.95H8.6Q10.5 35 13 37.025q2.5 2.025 6.75 3.475Zm8.55-.05q3.6-1.15 6.475-3.45 2.875-2.3 4.625-5.55h-7.45q-.65 2.7-1.525 4.9-.875 2.2-2.125 4.1Zm-20.7-12h7.95q-.15-1.35-.175-2.425-.025-1.075-.025-2.125 0-1.25.05-2.225.05-.975.2-2.175h-8q-.35 1.2-.475 2.15T7 23.9q0 1.3.125 2.325.125 1.025.475 2.225Zm11.05 0H29.4q.2-1.55.25-2.525.05-.975.05-2.025 0-1-.05-1.925T29.4 19.5H18.65q-.2 1.55-.25 2.475-.05.925-.05 1.925 0 1.05.05 2.025.05.975.25 2.525Zm13.75 0h8q.35-1.2.475-2.225Q41 25.2 41 23.9q0-1.3-.125-2.25T40.4 19.5h-7.95q.15 1.75.2 2.675.05.925.05 1.725 0 1.1-.075 2.075-.075.975-.225 2.475Zm-.5-11.95h7.5q-1.65-3.45-4.525-5.75Q32 8.45 28.25 7.5q1.25 1.85 2.125 4t1.525 5Zm-12.7 0h9.7q-.55-2.65-1.85-5.125T24 7q-1.6 1.35-2.7 3.55-1.1 2.2-2.1 5.95Zm-10.6 0h7.55q.55-2.7 1.4-4.825.85-2.125 2.15-4.125-3.75.95-6.55 3.2T8.6 16.5Z" />
-    </svg>
-  );
-};
-const Icon = ({ name, size = 24, fill = "currentColor" }) => {
+const Icon = ({ name, size = 24 }) => {
   const icons = {
     add: addIcon,
     search: searchIcon,
@@ -257,13 +193,10 @@ const Icon = ({ name, size = 24, fill = "currentColor" }) => {
     transfer: transferIcon,
     account: accountIcon,
     help: helpIcon,
-    play: playIcon,
-    attention: attentionIcon,
-    cardDown: cardDownIcon,
-    like: likeIcon,
-    world: worldIcon,
+    menu: menuIcon,
   };
   const Components = icons[name];
-  return <Components size={size} fill={fill} />;
+  return <Components size={size} />;
 };
+
 export { Icon };
