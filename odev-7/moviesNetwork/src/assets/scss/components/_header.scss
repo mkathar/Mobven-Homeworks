@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 5rem;
+  align-items: center;
+  background-color: $gray;
+  &__group {
+    display: flex;
+    &__list {
+      display: flex;
+      margin: 0 1rem;
+      list-style: none;
+    }
+    &__list--item {
+      margin: 0 1rem;
+    }
+    &__select {
+    }
+    &__select--option {
+    }
+  }
+}
