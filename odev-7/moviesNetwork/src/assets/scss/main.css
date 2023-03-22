@@ -47,9 +47,9 @@ ul {
 }
 
 .swiper-slide img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .mySwiper__title {
@@ -87,8 +87,8 @@ ul {
   height: 40px;
   padding-left: 10px;
   border-radius: 10px;
-  margin-left: 15rem;
-  width: 250px;
+  margin-left: 42rem;
+  width: 400px;
 }
 .filter__group__query--label {
   color: white;
