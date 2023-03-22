@@ -2,20 +2,13 @@
   <div class="filter">
     <div class="filter__group__query">
       <div class="filter__group__query__entry">
-        <p class="filter__group__query--label">
-          Release Date
-          <Icon name="down" />
-        </p>
-        <p class="filter__group__query--label">
-          Filters
-          <Icon name="down" />
-        </p>
         <input
           id="search"
           class="filter__group__query--input"
           type="text"
           @keyup="search"
           v-model="query"
+          placeholder="Örn: Black Adam"
         />
       </div>
       <div class="filter__group__query">
@@ -48,6 +41,9 @@
           </button>
         </div>
       </div>
+      <p v-if="filtered.length == 0" class="filter__group__result--warning">
+        Gösterilecek içerik bulunamadı
+      </p>
     </div>
   </div>
 </template>
