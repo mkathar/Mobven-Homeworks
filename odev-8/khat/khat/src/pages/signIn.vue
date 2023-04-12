@@ -56,7 +56,7 @@
         <div class="flex justify-between">
           <input
             type="submit"
-            value=" Register for this event"
+            value=" Login"
             class="bg-white text-black w-[250px] p-3 my-5 cursor-pointer"
           />
 

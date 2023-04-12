@@ -1,5 +1,5 @@
 <template>
-  <p class="p-2 m-2 rounded bg-gray-400 inline-block">{{ auth }}</p>
+  <p class="p-2 m-2 rounded text-white inline-block">{{ auth }}</p>
 </template>
 
 <script>
