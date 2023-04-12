@@ -7,17 +7,16 @@
         </RouterLink>
       </div>
       <div class="w-[550px] my-0 mx-auto flex flex-col">
-        <p class="mb-5 mt-10">{{ time }}</p>
+        <p class="mb-5 mt-4">{{ time }}</p>
         <h1 class="text-4xl mb-5">
           The help of Augmented Reality and Holograms
         </h1>
         <p class="mb-10 text-base">
           Use Augmented Reality to keep students engaged and provide detailed
           explanations of models and course material. In a 3D, AR Lab, students
-          can pinch, zoom, and rotate equipment related to the course, for a
           fully immersive learning experience
         </p>
-        <h2 class="mb-5 text-3xl">Join the Event</h2>
+        <h2 class="mb-4 text-3xl">Join the Event</h2>
       </div>
       <form
         v-if="$route.name == 'login'"
@@ -26,39 +25,39 @@
       >
         <div class="flex gap-x-10 mb-5">
           <div class="flex flex-col w-[45%]">
-            <label for="">Mail</label>
+            <label for="">E-mail</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="text"
               v-model="form.mail"
               @blur="v$.form.mail.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.mail.$error">
-              your mail was wrong
+              Your mail was wrong
             </div>
           </div>
           <div class="flex flex-col w-[45%]">
             <label for="">Password</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="password"
               v-model="form.password"
               @blur="v$.form.password.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.password.$error">
-              your password was wrong
+              Your password was wrong
             </div>
           </div>
         </div>
         <div class="flex mt-5">
-          <input type="checkbox" class="mr-5" />
+          <input type="checkbox" class="mr-5 cursor-pointer" />
           <p class="">I would like to receive emails about future webinars</p>
         </div>
         <div class="flex justify-between">
           <input
             type="submit"
             value=" Register for this event"
-            class="bg-white text-black w-[250px] p-3 my-5"
+            class="bg-white text-black w-[250px] p-3 my-5 cursor-pointer"
           />
 
           <p class="mt-8">
@@ -75,25 +74,25 @@
           <div class="flex flex-col w-[45%]">
             <label for="">First name</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="text"
               v-model="form.name"
               @blur="v$.form.name.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.name.$error">
-              name field has an error.
+              Name field has an error.
             </div>
           </div>
           <div class="flex flex-col w-[45%]">
             <label for="">Last name</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="text"
               v-model="form.surname"
               @blur="v$.form.surname.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.surname.$error">
-              surname field has an error.
+              Surname field has an error.
             </div>
           </div>
         </div>
@@ -101,25 +100,25 @@
           <div class="flex flex-col w-[45%]">
             <label for="">Username</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="text"
               v-model="form.username"
               @blur="v$.form.username.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.username.$error">
-              username field has an error.
+              Username field has an error.
             </div>
           </div>
           <div class="flex flex-col w-[45%]">
             <label for="">E-mail</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="text"
               v-model="form.mail"
               @blur="v$.form.mail.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.mail.$error">
-              mail field has an error.
+              E-mail field has an error.
             </div>
           </div>
         </div>
@@ -127,32 +126,32 @@
           <div class="flex flex-col w-[45%]">
             <label for="">Password</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="password"
               v-model="form.password"
               @blur="v$.form.password.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.password.$error">
-              password field has an error.
+              Password field has an error.
             </div>
           </div>
           <div class="flex flex-col w-[45%]">
             <label for="">Comfirm Your Password</label>
             <input
-              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px]"
+              class="h-12 bg-transparent border-b-gray-500 border-solid border-[1px] px-6"
               type="password"
               v-model="form.confirm"
               @blur="v$.form.confirm.$touch()"
             />
             <div class="text-red-600" v-if="v$.form.confirm.$error">
-              confirm field has an error.
+              Confirm field has an error.
             </div>
           </div>
         </div>
-        <div class="mt-5">
+        <div class="mt-2">
           <label for="">Profil Resmi</label>
           <input
-            class="mt-4 w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-gray-700 hover:file:bg-violet-100"
+            class="mt-4 w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full cursor-pointer file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-gray-700 hover:file:bg-violet-100"
             type="file"
             @blur="$v.form.picture.$touch()"
             @change="onFilePicked"
@@ -170,7 +169,7 @@
           <input
             type="submit"
             value=" Register for this event"
-            class="bg-white text-black w-[250px] p-3 my-5 justify-end"
+            class="bg-white text-black w-[250px] p-3 my-5 justify-end cursor-pointer"
           />
           <p class="mt-8">
             <RouterLink to="/login">You do have an account?</RouterLink>

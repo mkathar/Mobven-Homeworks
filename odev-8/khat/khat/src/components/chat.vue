@@ -1,10 +1,16 @@
-// Parent component
 <template>
   <div class="bg-[#464856] w-[80%] h-[100vh]">
     <div class="h-[95%]"><Messages /></div>
+
     <div class="flex h-[5%]">
-      <input class="w-[90%] bg-[#585a6b]" type="text" />
-      <button class="bg-[#4d1f1f] w-[10%]">SEND</button>
+      <input
+        type="text"
+        class="w-[90%] bg-[#585a6b] px-8 text-white"
+        placeholder="Type your message"
+        v-model="inputValue"
+      />
+
+      <button class="bg-[#5D9C59] text-white w-[10%]">SEND</button>
     </div>
   </div>
 </template>
@@ -13,22 +19,23 @@
 import Messages from "./messages.vue";
 
 export default {
+  data() {
+    return {
+      // currentUserName: localStorage.getItem("name"),
+      // currentUserId: localStorage.getItem("id"),
+      // currentUserPhoto: localStorage.getItem("photoURL"),
+      // inputValue: "",
+      // listMessage: [],
+      // groupChatId: null,
+    };
+  },
   provide: {
     message: "Selam Nasılsın ?",
+    currentUser: null,
   },
   components: {
     Messages,
   },
+  methods: {},
 };
 </script>
-
-<!--
-
- <div class="bg-[#464856] w-[80%] h-[100vh]">
-    <div class="h-[95%]">Message AREA</div>
-    <div class="flex h-[5%]">
-      <input class="w-[90%] bg-[#585a6b]" type="text" />
-      <button class="bg-[#4d1f1f] w-[10%]">SEND</button>
-    </div>
-  </div>
--->
