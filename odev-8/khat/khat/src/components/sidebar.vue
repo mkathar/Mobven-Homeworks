@@ -48,20 +48,8 @@
 </template>
 
 <script>
-import firebase from "../services/firebase";
-import { getAuth } from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
-import { getFirestore } from "firebase/firestore";
 import AuthVue from "./auth/auth.vue";
 
-const docRef = doc(getFirestore(), "users", "SF");
-const docSnap = await getDoc(docRef);
-
-if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data());
-} else {
-  console.log("No such document!");
-}
 export default {
   data() {
     return {};
