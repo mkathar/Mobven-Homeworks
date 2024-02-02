@@ -29,10 +29,7 @@ export default {
       // groupChatId: null,
     };
   },
-  provide: {
-    message: "Selam Nasılsın ?",
-    currentUser: null,
-  },
+  provide: { message: "Selam Nasılsın ?", currentUser: null },
   components: {
     Messages,
   },

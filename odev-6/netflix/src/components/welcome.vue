@@ -31,7 +31,15 @@
   </div>
 </template>
 
-<script setup>
-import { Icon } from "../icons";
+<script>
 import { RouterLink } from "vue-router";
+import { Icon } from "../icons";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    Icon,
+  },
+};
 </script>

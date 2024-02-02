@@ -76,6 +76,10 @@ export default {
           mail: "mail6@gmail.com",
           password: "123456",
         },
+        {
+          mail: "akın@gmail.com",
+          password: "akın",
+        },
       ],
     };
   },

@@ -449,7 +449,6 @@
 </template>
 
 <script setup>
-import { Icon } from "../icons";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
@@ -464,6 +463,7 @@ import "swiper/css/scrollbar";
 import Footer from "./footer.vue";
 </script>
 <script>
+import { Icon } from "../icons";
 export default {
   data() {
     return {
@@ -505,6 +505,9 @@ export default {
       console.log(newValue);
       this.filtered = newValue;
     },
+  },
+  components: {
+    Icon,
   },
 };
 </script>
